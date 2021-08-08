@@ -58,9 +58,17 @@ export default function Spx(props) {
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.column}>
-              <span className={styles.title}>Space X Flight Info</span>
-              <span className={styles.label}>Upcoming?</span>
-              <p className={styles.subTitle}>Clique para aumentar.</p>
+              <span className={styles.title}>SpaceX Photo Gallery</span>
+              {props.apiResponse.upcoming ? (
+                <p className={styles.subTitle}>
+                  Images from the upcoming {props.apiResponse.name} mission.
+                </p>
+              ) : (
+                <p className={styles.subTitle}>
+                  Photos from the latest {props.apiResponse.name} mission. Click
+                  to enlarge.
+                </p>
+              )}
 
               <div className={styles.gallery}>
                 {photos.map((photo, i) => {
@@ -90,14 +98,12 @@ export default function Spx(props) {
                     );
                   }
                 })}
-                {/* <div className={styles.rocketImage}>
-                <img src={props.apiResponse.links.patch.small} />
-              </div> */}
               </div>
-              <p className={styles.description}>qualquer coisa</p>
-
-              <a href="https://aka.ms/spfx" className={styles.button}>
-                <span className={styles.label}>Learn more</span>
+              <a
+                href={`${props.apiResponse.links.webcast}`}
+                className={styles.button}
+              >
+                <span className={styles.button}>Watch</span>
               </a>
             </div>
           </div>
@@ -115,9 +121,17 @@ export default function Spx(props) {
                   </span>
                   <img src={photos[activeIndex]} />
                   <div>
-                    <p>Some text in the Modal..</p>
+                    {props.apiResponse.success ? (
+                      <p>{props.apiResponse.name} mission was successful.</p>
+                    ) : (
+                      <p>
+                        {props.apiResponse.name} mission was unsuccessful or on
+                        hold.
+                      </p>
+                    )}
                     <div>
                       <span
+                        className={styles.button}
                         onClick={() => {
                           previousItem();
                         }}
@@ -125,6 +139,7 @@ export default function Spx(props) {
                         Anterior
                       </span>{" "}
                       <span
+                        className={styles.button}
                         onClick={() => {
                           nextItem();
                         }}
