@@ -87,7 +87,7 @@
     z-index: 10;
   }
   .modalContent img {
-    // max-width: 85%;
+    max-width: 85%;
     max-height: 60vh;
   }
   .modalImageHolder {
@@ -150,6 +150,25 @@
     // .label {
     // }
   }
+  @media only screen and (max-width: 600px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 90px;
+    }
+    .photoOne {
+      grid-column: 1 / 3;
+      grid-row: 1 / 1;
+      object-fit: cover;
+      height: 100%;
+    }
+    .button {
+      margin: 0 auto;
+      //display: contents;
+    }
+    .modalImageHolder img {
+      max-width: 95%;
+    }
+  }
 }
 :global {
   .CanvasSection-xl6 {
@@ -163,6 +182,29 @@
         grid-row: 1 / 1;
         object-fit: cover;
         height: 100%;
+      }
+    }
+  }
+}
+:global {
+  .CanvasSection-xl4 {
+    :local {
+      .container {
+        color: #323130;
+      }
+      .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px;
+      }
+      .photoOne {
+        grid-column: 1 / 3;
+        grid-row: 1 / 1;
+        object-fit: cover;
+        height: 100%;
+      }
+      .button {
+        margin: 0 auto;
+        //display: contents;
       }
     }
   }
