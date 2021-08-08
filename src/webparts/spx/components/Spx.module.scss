@@ -151,3 +151,19 @@
     // }
   }
 }
+:global {
+  .CanvasSection-xl6 {
+    :local {
+      .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 170px;
+      }
+      .photoOne {
+        grid-column: 1 / 3;
+        grid-row: 1 / 1;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}

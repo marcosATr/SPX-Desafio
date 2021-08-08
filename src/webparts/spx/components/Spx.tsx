@@ -103,7 +103,7 @@ export default function Spx(props) {
                 href={`${props.apiResponse.links.webcast}`}
                 className={styles.button}
               >
-                <span className={styles.button}>Watch</span>
+                <span className={styles.button}>Watch on Youtube</span>
               </a>
             </div>
           </div>
