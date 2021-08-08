@@ -1,10 +1,31 @@
-# spx
+# SPACEX - Webpart - Galeria de fotos
 
-## Summary
+Webpart para o Microsoft Sharepoint.
+A galeria de fotos foi construída com React.
 
-Short summary on functionality and used technologies.
+Através do consumo da api do SpaceX, um conjunto de fotos em alta resolução é exibido.
 
+## Funcionalidades:
+
+- Ao clicar em uma imagem um modal abre com uma exibição da imagem.
+- Dentro do modal é possível passar e retroceder as imagens.
+- Suporte aos layouts de coluna nativos do Sharepoint.
+- O grid com as imagens se ajusta também em telas menores, acompanhando o container pai.
+
+
+## Images da solução:
+1) Imagem do componente ocupando toda a largura do container:
+![version](https://i.imgur.com/scTU5H4.png)
+
+2) Imagem do componente ocupando uma coluna com metade da largura. O grid com as imagens se adapta automaticamente:
+![version](https://i.imgur.com/e4zC4ot.png)
+
+3) Imagem do componente a menor coluna disponível no Sharepoint. O tema da seção também foi alterado para avaliar a compatibilidade da mudança feita pelo usuário.
+![version](https://i.imgur.com/gNwByFb.png)
 [picture of the solution in action, if possible]
+
+
+
 
 ## Used SharePoint Framework Version
 

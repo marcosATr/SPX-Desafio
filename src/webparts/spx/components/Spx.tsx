@@ -22,7 +22,6 @@ export default function Spx(props) {
         return photo;
       }
     });
-    console.log(activeIndex);
   };
 
   //Next Photo
@@ -33,6 +32,7 @@ export default function Spx(props) {
     findItem(e.target.src);
   };
 
+  //Change selected photo on modal
   const nextItem = () => {
     activeIndex < photos.length - 1
       ? setActiveIndex(activeIndex + 1)

@@ -6,7 +6,7 @@ import {
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { HttpClient, HttpClientResponse } from "@microsoft/sp-http";
+import { HttpClient } from "@microsoft/sp-http";
 import * as strings from 'SpxWebPartStrings';
 import Spx from './components/Spx';
 import { ISpxProps } from './components/ISpxProps';
@@ -49,26 +49,4 @@ export default class SpxWebPart extends BaseClientSideWebPart<ISpxWebPartProps> 
   protected get dataVersion(): Version {
     return Version.parse('1.0');
   }
-
-//   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
-//     return {
-//       pages: [
-//         {
-//           header: {
-//             apiResponse: strings.PropertyPaneDescription
-//           },
-//           groups: [
-//             {
-//               groupName: strings.BasicGroupName,
-//               groupFields: [
-//                 PropertyPaneTextField('apiResponse', {
-//                   label: strings.DescriptionFieldLabel
-//                 })
-//               ]
-//             }
-//           ]
-//         }
-//       ]
-//     };
-//   }
  }
