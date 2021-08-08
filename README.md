@@ -37,7 +37,6 @@ O tema da seção também foi alterado para avaliar a compatibilidade da mudanç
 ![Modal exibindo a foto](https://i.imgur.com/rrqS7g6.png)
 
 
-
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/npm/v/@microsoft/sp-component-base/latest?color=green)
@@ -47,11 +46,6 @@ O tema da seção também foi alterado para avaliar a compatibilidade da mudanç
 - [SharePoint Framework](https://aka.ms/spfx)
 - [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
 
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-## Prerequisites
-
-> Any special pre-requisites?
 
 ## Solution
 
