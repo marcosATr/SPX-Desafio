@@ -41,9 +41,7 @@ export default class SpxWebPart extends BaseClientSideWebPart<ISpxWebPartProps> 
         HttpClient.configurations.v1
       );
     return response.json();
-    // .then(textResponse => {
-    //   return textResponse;
-    // }) as Promise<any>;
+  
   }
 
   protected get dataVersion(): Version {
