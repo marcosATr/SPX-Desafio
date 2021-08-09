@@ -52,6 +52,6 @@ O tema da seção também foi alterado para avaliar a compatibilidade da mudanç
 SPACEX - Webpart - Galeria de fotos | Marcos Trannin
 
 ## Outros Links:
--- Linkedin do Autor.
+-- [Linkedin do Autor](https://www.linkedin.com/in/marcos-a-253b14184/).
 
 
