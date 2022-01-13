@@ -5,7 +5,6 @@ A galeria de fotos foi construída com React.
 
 Através do consumo da api do SpaceX, um conjunto de fotos em alta resolução é exibido.
 
-[Apresentação em vídeo do webpart](https://youtu.be/9WJusASjrio)
 
 ## Funcionalidades:
 
